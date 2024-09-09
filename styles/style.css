@@ -1,1 +1,71 @@
 /* Estylos por pagina de los html */
+:root{
+    --button-primary: #ff3131;
+}
+
+body{
+    width: 99vw;
+    height: 90vh;
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+}
+.nav{
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .separation{
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+    
+    .languages{
+        padding: 5px;
+        display: flex;
+        color: white;
+        border: 10px white;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        gap: 7px;
+        border: 2px solid white;
+        i{
+            width: 10px;
+        }
+    } 
+
+    button{
+        height: 34px;
+    }
+}
+
+.text{
+    font-size: 30px;
+    margin: auto 20%;
+    padding-top: 50px;
+    text-align: center;
+
+    input{
+        height: 29px;
+        width: 220px;
+        padding-left: 20px;
+    }
+
+}
+
+button{
+    height: 34px;
+    background-color: var(--button-primary);
+    border: 1px solid white;
+    color: white;
+}
+
+#logo{
+    width: 200px;
+}
+
+.text{
+    color: white;
+}
