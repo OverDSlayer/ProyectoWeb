@@ -1,4 +1,10 @@
 /* Estylos por pagina de los html */
+@import url("https://fonts.googleapis.com/css2?family=SUSE&family=Skranji:wght@400;700&display=swap");
+
+* {
+    font-family: "Skranji", system-ui;
+}
+
 :root{
     --button-primary: #ff3131;
 }
@@ -36,9 +42,13 @@ body{
         }
     } 
 
-    button{
+    .button{
         height: 34px;
     }
+}
+
+a{
+    text-decoration: none;
 }
 
 .text{
@@ -55,11 +65,12 @@ body{
 
 }
 
-button{
+.button{
     height: 34px;
     background-color: var(--button-primary);
     border: 1px solid white;
     color: white;
+    font-size: 1rem;
 }
 
 #logo{

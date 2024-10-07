@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="../img/logo.png"/>
+    <link rel="stylesheet" href="../styles/registro.css">
+    <title>Registro</title>
+  </head>
+  <body>
+    <nav>
+
+    </nav>
+    <form>
+      <h1>REGISTRO DE USUARIO</h1>
+      <div class="contenedor-head">
+        <div class="junto">
+            <label>Nombre/s</label>
+            <input type="text" required id="name"/>
+        </div>
+        <div class="junto">
+            <label>Apellido/s</label>
+            <input type="text" required id="lastName"/>
+        </div>
+        <div class="junto">
+            <label>Fecha de nac.</label>
+            <input type="date" required id="dateNac"/>
+        </div>
+        <div class="junto">
+            <label>Telefono</label>
+            <div class="telf" style="display: flex; gap: 5px">
+                <input type="text" style="width: 30px" disabled placeholder="+51" id="telef"/>
+                <input type="text" required id="telefono"/>
+            </div>
+        </div>
+      </div>
+      <div class="contenedor-body">
+        <div class="text">
+          <label>Nombre de usuario</label>
+          <div class="junto">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" required id="userName"/>
+          </div>
+        </div>
+        <div class="text">
+          <label>Corro electronico</label>
+          <div class="junto">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" required id="email"/>
+          </div>
+        </div>
+        <div class="text">
+          <label >Contraseña</label>
+          <div class="junto">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" required id="password" />
+          </div>
+        </div>
+        <div class="text">
+          <label >Confirmar Contraseña</label>
+          <div class="junto">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" required id="passwordTwo"/>
+          </div>
+        </div>
+      </div>
+      <button id="register"> <i class="fa-solid fa-paw"></i> Registrarse</button>
+      <p>Ya tienes cuenta? Haz <a href="login.html">click aqui</a> para logeartee</p>
+    </form>
+
+    <script src="../src/registro.js"></script>
+  </body>
+</html>

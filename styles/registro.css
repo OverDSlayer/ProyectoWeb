@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE&family=Skranji:wght@400;700&display=swap");
+
+* {
+    font-family: "Skranji", system-ui;
+}
+
+:root {
+    --bg-color: rgb(245, 187, 26);
+    --color: #000000;
+    --bg-color2: #ff3131;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url("../img/fondoregister.png");
+    background-size: cover;
+    margin: 0 35%;
+    align-items: center;
+  }
+
+  form {
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+
+    h1 {
+      text-align: center;
+    }
+  }
+  
+  p{
+    font-size: 0.8rem;
+  }
+
+  input {
+    height: 25px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+
+  button{
+    border: 0;
+    background-color: var(--bg-color2);
+    border-radius: 10px;
+    height: 40px;
+    width: 120px;
+    transition: all 1s ease;
+  }
+
+  button:hover{
+    border: 1px solid #000000;
+  }
+
+
+  .contenedor-head {
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    .telf{
+        width: 90%;
+
+        #telef{
+            padding-left: 2px;
+        }
+    }
+  }
+
+  .contenedor-body {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    label{
+        margin-left: 20px;
+    }
+    .text{
+        width: 90%;
+    }
+  }

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Fuentes"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML"
+	}
+}
