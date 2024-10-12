@@ -1,35 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../styles/peliculas.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/peliculas.css" />
     <title>Recomendaciones</title>
-</head>
-<body>
-    <header>
-    </header>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="image-container">
+        <img src="../img/190cdcab74e0_640_360.jpg" alt="Imagen 1" />
+        <img src="../img/59f4da48d64495102a12b1bbfcb30e34.jpg" alt="Imagen 2" />
+        <img
+          src="../img/e84fd4896da21bc9c6eb74ec61e62784546c44816950ecdf17b6db0c6ba01112.jpg"
+          alt="Imagen 3"
+        />
+        <img src="../img/images (2).jpg" alt="" />
+      </div>
+      <button class="next">&#10095;</button>
+      <button class="prev">&#10094;</button>
+    </div>
+
     <section class="recomendado">
-        <h2>Recomendado</h2>
-    </section>
-    <section class="grid-container">
-      <div class="grid-item"><img src="../img/190cdcab74e0_640_360.jpg"></div>
-      <div class="grid-item"><img src="../img/59f4da48d64495102a12b1bbfcb30e34.jpg"></div>
-      <div class="grid-item"><img src="../img/Alien_Covenant_Header_1024x1024.jpg"></div>  
-      <div class="grid-item"><img src="../img/download.jpg"></div>
-      <div class="paw"><i class="fa-solid fa-chevron-up"></i></div>
-    </section>
-      <section class="pelicula oculto">
-          <div class="grid-item"><img src="../img/e84fd4896da21bc9c6eb74ec61e62784546c44816950ecdf17b6db0c6ba01112.jpg"></div>
-          <div class="grid-item"><img src="../img/HD-wallpaper-movie-john-wick-chapter-2-john-wick-keanu-reeves.jpg"></div>  
-          <div class="grid-item"><img src="../img/images (1).jpg"></div>
-          <div class="grid-item"><img src="../img/images (2).jpg"></div>
-          <div class="grid-item"><img src="../img/images (3).jpg"></div>
-          <div class="grid-item"><img src="../img/images (4).jpg"></div>
-          <div class="grid-item"><img src="../img/images (5).jpg"></div>
-          <div class="grid-item"><img src="../img/images.jpg"></div>          
+      <h2>Recomendado</h2>
+      <section class="grid-container">
+        <div class="grid-item">
+          <img src="../img/190cdcab74e0_640_360.jpg" />
+          <div class="play">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>PLAY</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="../img/59f4da48d64495102a12b1bbfcb30e34.jpg" />
+          <div class="play">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>PLAY</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="../img/Alien_Covenant_Header_1024x1024.jpg" />
+          <div class="play">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>PLAY</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="../img/download.jpg" />
+          <div class="play">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>PLAY</span>
+          </div>
+        </div>
+        <div class="paw">
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
       </section>
-      <script src="../src/script.js"></script>
-</body>
+      <section class="pelicula oculto">
+        <div class="grid-item">
+          <img
+            src="../img/e84fd4896da21bc9c6eb74ec61e62784546c44816950ecdf17b6db0c6ba01112.jpg"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            src="../img/HD-wallpaper-movie-john-wick-chapter-2-john-wick-keanu-reeves.jpg"
+          />
+          <div class="play">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>PLAY</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="../img/images (1).jpg" />
+          <div class="play">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>PLAY</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="../img/images (2).jpg" />
+          <div class="play">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>PLAY</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="../img/images (3).jpg" />
+          <div class="play">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>PLAY</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="../img/images (4).jpg" />
+          <div class="play">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>PLAY</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="../img/images (5).jpg" />
+          <div class="play">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>PLAY</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="../img/images.jpg" />
+          <div class="play">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>PLAY</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="../src/peliculas.js"></script>
+  </body>
 </html>

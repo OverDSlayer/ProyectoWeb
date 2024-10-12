@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Principal</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <ul class="column">
+          <li>
+            <a id="treebars" class="icon_bar">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </li>
+          <li>
+            <a id="logoBar" class="icon_bar">
+              <img class="logo_bar" src="../img/logo_bar.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="column">
+          <li>
+            <a id="searchIcon" class="icon_bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+          <li>
+            <a id="listIcon" class="icon_bar">
+              <i class="fa-solid fa-bookmark"></i>
+            </a>
+          </li>
+          <li>
+            <a id="userBar" class="icon_bar">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </li>
+          <li>
+            <a id="arrowUserBar" class="icon_bar">
+              <i class="fa-solid fa-sort-down"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="box_config">
+      <ul class="row, options_config">
+        <li><a class="hoverCat">Inicio</a></li>
+        <li><a class="hoverCat">Configuracion</a></li>
+        <li><a class="hoverCat">Historial</a></li>
+      </ul>
+    </div>
+    <div class="box_user">
+      <ul class="row, options_user">
+        <li><a class="option_user">Mi perfil</a></li>
+        <li><a class="option_user" href="./login.html">Cerrar Sesion</a></li>
+      </ul>
+    </div>
+    <iframe src="./peliculas.html" frameborder="0"></iframe>
+    <script src="../src/nav.js"></script>
+  </body>
+</html>

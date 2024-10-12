@@ -13,7 +13,7 @@ button.addEventListener('click', (e)=>{
 
     const esCorrecto = USERS.find(element => element.userName === userValue && element.password === passwordValue)
     if (esCorrecto) {
-        window.location.href = 'peliculas.html'
+        window.location.href = './nav.html'
         return alert('El usuario es correcto');
     }else{
         return alert('El usuario es incorrecto');
