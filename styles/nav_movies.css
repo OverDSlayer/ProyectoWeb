@@ -1,7 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(../img/fondoregister.png);
+    background-image: url(../img/backgroundCatsT.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .contenedor{
@@ -12,6 +15,10 @@ body{
     row-gap: 20px;
     background-color: black;
 }
+.centrar
+{
+    width: 100%;
+}
 
 .portada{
     grid-column: 2;
@@ -20,7 +27,16 @@ body{
     border: 5px solid #db0e0e;
     padding: 1rem;
     color: white;
-    text-align: center;
+    display: flex;
+}
+
+.centrar img{
+    width: 100%;
+    height: 100%;
+}
+
+.descripcion{
+    
 }
 
 .capitulos{
