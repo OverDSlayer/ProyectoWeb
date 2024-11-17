@@ -19,7 +19,7 @@ section {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-image: url(../img/fondoregister.png);
+  background-image: url(../img/backgroundCatsT.png);
   background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
 }
 
