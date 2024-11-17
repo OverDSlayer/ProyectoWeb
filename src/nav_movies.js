@@ -46,7 +46,10 @@ const episodiosData = [
 ];
 const relacionadosData = [
     { titulo: "Película A", descripcion: "Sinopsis de la película A" },
-    { titulo: "Película B", descripcion: "Sinopsis de la película B" }
+    { titulo: "Película B", descripcion: "Sinopsis de la película B" },
+    { titulo: "Película C", descripcion: "Sinopsis de la película C" },
+    { titulo: "Película D", descripcion: "Sinopsis de la película D" },
+    { titulo: "Película E", descripcion: "Sinopsis de la película E" },
 ];
 const repartoData = [
     { nombre: "Actor 1", rol: "Personaje 1" },

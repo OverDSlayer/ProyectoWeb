@@ -134,7 +134,7 @@ body {
 }
 
 .btnAgain a img:hover {
-    transform: rotate(360deg); /* Gira 360 grados */
+    transform: rotate(-360deg); /* Gira 360 grados */
 }
 
 /*--------------------------------------- Capitulos ------- --------------------------------------------*/
@@ -159,15 +159,26 @@ body {
     padding: 20px;
     color: white;
 }
+
 #ventanaRelacionados{
+    
+}
+
+#contenidoRelacionados{
+    justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 30%;
+}
+
+#ventanaRelacionados .item{
+    
+    max-width: 27%;
+    min-width: 25%;
+    justify-items: center;
 }
 
 .contenido .item {
-    background-color: transparent; /* Fondo más oscuro */
     border-radius: 15px;
     font-size: 20px;
     padding: 10px 30px;
