@@ -8,14 +8,22 @@ button.addEventListener('click', (e)=>{
 
     let userValue = user.value;
     let passwordValue = password.value;
-
-    const USERS = JSON.parse(localStorage.getItem('users')) || []
-
-    const esCorrecto = USERS.find(element => element.userName === userValue && element.password === passwordValue)
-    if (esCorrecto) {
-        window.location.href = './nav.html'
-        return alert('El usuario es correcto');
-    }else{
-        return alert('El usuario es incorrecto');
-    }
+    getUsuario(userValue,passwordValue);
+    
 })
+
+async function getUsuario(username,pass) {
+    const data = await fetch('http://localhost:3000/usuarios');
+    const result = await data.json();
+    result.forEach((resp) =>{
+        if (resp.userName === username && resp.password === pass) {
+            alert('El usuario es correcto');
+            location.href = 'http://localhost:5173/pages/nav.html';
+            return;
+        }
+        return;
+    })
+    alert('no se encontro el usuario');
+    location.href = 'http://localhost:5173/pages/login.html';
+    return;
+}
