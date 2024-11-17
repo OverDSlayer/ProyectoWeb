@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build", 
+    "dev2": "nodemon src/index.js",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -14,8 +15,9 @@
     "vite": "^5.4.1"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.0",
-    "mysql2": "^3.11.3"
+    "mysql2": "^3.11.4"
   },
   "description": "Creacion de la pagina web de Nekaf para el trabajo de desarrollo web;\r !Nekaf Pagina de Streaming para ver peliculas (No se parece a netflix)¡",
   "keywords": [],

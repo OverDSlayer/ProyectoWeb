@@ -18,26 +18,26 @@
     <nav>
 
     </nav>
-    <form>
+    <form method="post" action="http://localhost:3000/usuarios/subir">
       <h1>REGISTRO DE USUARIO</h1>
       <div class="contenedor-head">
         <div class="junto">
             <label>Nombre/s</label>
-            <input type="text" required id="name"/>
+            <input type="text" required name="name" id="name"/>
         </div>
         <div class="junto">
             <label>Apellido/s</label>
-            <input type="text" required id="lastName"/>
+            <input type="text" required name="lastName" id="lastName"/>
         </div>
         <div class="junto">
             <label>Fecha de nac.</label>
-            <input type="date" required id="dateNac"/>
+            <input type="date" required name="dateNac" id="dateNac"/>
         </div>
         <div class="junto">
             <label>Telefono</label>
             <div class="telf" style="display: flex; gap: 5px">
                 <input type="text" style="width: 30px" disabled placeholder="+51" id="telef"/>
-                <input type="text" required id="telefono"/>
+                <input type="text" required name="telefono" id="telefono"/>
             </div>
         </div>
       </div>
@@ -46,21 +46,21 @@
           <label>Nombre de usuario</label>
           <div class="junto">
             <i class="fa-solid fa-user"></i>
-            <input type="text" required id="userName"/>
+            <input type="text" name="userName" required id="userName"/>
           </div>
         </div>
         <div class="text">
           <label>Corro electronico</label>
           <div class="junto">
             <i class="fa-solid fa-envelope"></i>
-            <input type="email" required id="email"/>
+            <input type="email" required name="email" id="email"/>
           </div>
         </div>
         <div class="text">
           <label >Contraseña</label>
           <div class="junto">
             <i class="fa-solid fa-lock"></i>
-            <input type="password" required id="password" />
+            <input type="password" required name="password" id="password" />
           </div>
         </div>
         <div class="text">
