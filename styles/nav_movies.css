@@ -1,141 +1,243 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-body{
+/* Estilo General */
+body {
     margin: 0;
     padding: 0;
-    background-image: url(../img/backgroundCatsT.png);
+    font-family: 'League Spartan', sans-serif;
+    background-image: url('../img/backgroundCatsT.png');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-}
-
-.contenedor{
-    margin: 0 90px;
-    display: grid;
-    grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: auto auto auto auto 20px;
-    row-gap: 20px;
-    background-color: black;
-}
-
-
-.cajapeli{
-    grid-column: 2;
-    grid-row: 2;
-    width: auto;
-    height: auto;
-    background-color: black;
-    border: 5px solid #db0e0e;
-    padding: 1rem;
     color: white;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    margin: 0 90px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* Caja de Película */
+.cajapeli {
+    grid-row: 1;
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1rem;
+    margin: 20px 0;
 }
 
 .portada {
-    min-width: 600px; 
-    aspect-ratio: 16/9;
-    width: 100%;
-    min-width: 650px;
-    max-width: 800px;
-    flex-shrink: 0;
     position: relative;
-    left: 70px;
-    background: linear-gradient(to right, transparent 70%, black), url("../img/worldwar.jpg");
+    left: 30px;
+    flex: 1;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(to right, transparent 70%, black), url('../img/worldwar.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
-.descripcion{
-    font-family: "League Spartan", serif;
+.descripcion {
     position: relative;
     right: 80px;
+    width: 1000px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.titulo{
+.titulo {
     display: flex;
-    font-size: 70px;
-    font-weight: 700;
     flex-wrap: wrap;
-    padding: 15px;
-    margin: 10px 40px;
     justify-content: space-between;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 0 20px;
 }
 
-.puntuacion{
+.puntuacion {
     display: flex;
-    align-self: end;
+    align-items: end;
 }
 
-.star{
+.star {
     display: flex;
+    gap: 1px;
+    align-items: center;
+}
+
+.star img {
+    width: 30px;
+    height: auto;
     margin: 0;
     padding: 0;
 }
 
-.star img{
-    margin: 1.5px;
-    padding: 0;
-    width: 30px;
-}
-
-.starNumber{
-    font-size: 37px;
+.starNumber {
+    font-size: 1.5rem;
     color: #f2ab1a;
 }
 
-.sinopsis{
+.sinopsis {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+.buttonsMovie {
     display: flex;
     align-items: center;
-    padding: 15px;
-    margin: 10px 40px;
-    font-weight: 400;
-    font-size: 19px;
+    gap: 15px;
+    padding: 0 20px;
+    margin: 20px 0;
 }
 
-.buttonsMovie{
+.btnReproducir a img{
+    width: 160px;
+}
+
+.btnAgain a img{
+    width: 50px;
+    margin-right: 40px;
+}
+
+.btnListaAgregado a img{
+    width: 40px;
+}
+
+.btnListaAgregar a img{
+    width: 40px;
+}
+
+/* Transición de hover para todos los botones */
+.buttonsMovie a img {
+    transition: transform 0.2s ease, filter 0.3s ease; /* Suaviza tanto la rotación como el cambio de brillo */
+}
+
+.buttonsMovie a img:hover {
+    filter: brightness(1.2); /* Incrementa el brillo */
+    transform: scale(1.1); /* Agranda ligeramente la imagen */
+}
+
+/* Rotación 360 grados solo en el botón .btnAgain */
+
+.btnAgain a img {
+    transition: transform 0.6s ease, filter 0.3s; /* Suaviza tanto la rotación como el cambio de brillo */
+}
+
+.btnAgain a img:hover {
+    transform: rotate(360deg); /* Gira 360 grados */
+}
+
+/*--------------------------------------- Capitulos ------- --------------------------------------------*/
+.capitulos {
     display: flex;
-    align-items: center;
-    margin: 10px 40px;
-    padding: 15px;
+    margin: 0 100px;
+    flex-direction: column; /* Organiza las ventanas en columna */
+    align-items: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre las ventanas */
 }
 
-.btnReproducir img{
-    width: 200px;
-    margin: 10px;
+.ventanas {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre botones */
 }
 
-.btnAgain img{
-    width: 65px;
-    margin: 10px 100px 10px 10px;
+.capitulo { /********Contenido de cada ventana que va cambiando******/
+    display: flex; /* Ocultar ventanas por defecto */
+    flex-wrap: wrap;
+    width: 100%; /* Asegura que ocupen todo el espacio disponible */
+    padding: 20px;
+    color: white;
+}
+#ventanaRelacionados{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
 }
 
-.btnListaAgregado img{
-    width: 50px;
-    margin: 10px;
+.contenido .item {
+    background-color: transparent; /* Fondo más oscuro */
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.btnListaAgregar img{
-    width: 50px;
-    margin: 10px;
+.contenido .item:hover {
+    background-color: #1e1e1e;
+}
+
+.capitulo h2 {
+    text-align: center;
     display: none;
 }
 
-.capitulos{
-    grid-column: 2;
-    grid-row: 3;
-    background-color: #757575;
-    border: 5px solid #db0e0e;
-    padding: 1rem;
-    color: white;
-    text-align: center;
+.capitulo .contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-.comentarios{
-    grid-column: 2;
-    grid-row: 4;
+
+/* Estilo para los botones de ventanas */
+.btnVentana {
+    font-family: "League Spartan";
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.btnVentana:hover {
+    background-color: transparent; /* Añade un efecto visual al pasar el cursor */
+}
+
+/* Hover underline effect */
+.btnVentana::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform 0.2s ease;
+}
+
+.btnVentana:hover::after {
+    transform: scaleX(1);
+}
+
+/* Contenido de los episodios, relacionados y reparto */
+
+
+
+/*------------------------------------------ Comentarios -------------------------------------------------*/
+
+.comentarios {
+    text-align: center;
     background-color: #757575;
     border: 5px solid #db0e0e;
     padding: 1rem;
-    color: white;
-    text-align: center;
+    border-radius: 10px;
 }
