@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/nav_movies.css">
+    <title>World War Z</title>
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Sección de Película -->
+        <div class="cajapeli">
+            <div class="portada"></div>
+            <div class="descripcion">
+                <div class="titulo">
+                    <span>World War Z</span>
+                    <div class="puntuacion">
+                        <div class="star">
+                            <img src="../img_icon/starpc.svg" alt="Star">
+                            <img src="../img_icon/starpc.svg" alt="Star">
+                            <img src="../img_icon/starpc.svg" alt="Star">
+                            <img src="../img_icon/starpc.svg" alt="Star">
+                            <img src="../img_icon/starpc.svg" alt="Star">
+                        </div>
+                        <span class="starNumber">/4.9</span>
+                    </div>
+                </div>
+                <div class="sinopsis">
+                    En un mundo donde los zombis solo tienen un hambre insaciable por… café, un grupo de supervivientes 
+                    se encuentra atrapado en la única cafetería abierta en kilómetros. Mientras luchan por mantener 
+                    las tazas llenas, descubren que los zombis no muerden, sino que simplemente piden más leche. 
+                    ¿Podrán estos héroes salvar la última cafetera del mundo o caerán víctimas de un espresso mortal? 
+                    ¡Prepárate para reír, no entender nada y pedir un café!
+                </div>
+                <div class="buttonsMovie">
+                    <div class="btnReproducir" >
+                        <a href="#">
+                            <img src="../img_icon/btn_reproducir.svg" alt="Reproducir">
+                        </a>
+                    </div>
+                    <div class="btnAgain">
+                        <a href="#">
+                            <img src="../img_icon/btn_again.svg" alt="Ver de nuevo">
+                        </a>
+                    </div>
+                    <div class="btnListaAgregado" id="btnListaAgregado" style="display: none;">
+                        <a href="#">
+                            <img src="../img_icon/btn_listaAgregado.svg" alt="Lista agregada">
+                        </a>
+                    </div>
+                    <div class="btnListaAgregar" id="btnListaAgregar">
+                        <a href="#">
+                            <img src="../img_icon/btn_listaAgregar.svg" alt="Agregar a lista">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="capitulos">
+            <div class="ventanas">
+                <button class="btnVentana" onclick="mostrarVentana('ventanaEpisodios')">Episodios</button>
+                <button class="btnVentana" onclick="mostrarVentana('ventanaRelacionados')">Relacionados</button>
+                <button class="btnVentana" onclick="mostrarVentana('ventanaReparto')">Reparto</button>
+            </div>
+            <div class="capitulo ventana" id="ventanaEpisodios">
+                <h2>Episodios</h2>
+                <div class="contenido" id="contenidoEpisodios">
+                    <!-- Aquí aparecerán los episodios dinámicamente -->
+                </div>
+            </div>
+            <div class="capitulo ventana" id="ventanaRelacionados">
+                <h2>Relacionados</h2>
+                <div class="contenido" id="contenidoRelacionados">
+                    <!-- Aquí aparecerán los relacionados dinámicamente -->
+                </div>
+            </div>
+            <div class="capitulo ventana" id="ventanaReparto">
+                <h2>Reparto</h2>
+                <div class="contenido" id="contenidoReparto">
+                    <!-- Aquí aparecerá el reparto dinámicamente -->
+                </div>
+            </div>
+        </div>
+        <script src="../src/nav_movies.js"></script>
+</body>
+</html>
