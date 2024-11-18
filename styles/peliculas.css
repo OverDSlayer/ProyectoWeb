@@ -1,6 +1,7 @@
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
     url("../img/8.png");
+    background-size: cover;
   font-family: Arial, sans-serif;
   color: #fff;
 }
