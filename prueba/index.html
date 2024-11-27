@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirección con Pantalla de Carga</title>
+<style>
+    /* Estilo general */
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    }
+
+    /* Botón inicial */
+    #redirectBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    #redirectBtn:hover {
+    background-color: #2980b9;
+    }
+
+    /* Pantalla de carga */
+    .loading-screen {
+    display: none; /* Oculta inicialmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 10;
+    }
+
+    /* Animación */
+    .loading {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+    }
+</style>
+</head>
+<body>
+<!-- Botón para iniciar la redirección -->
+<button id="redirectBtn">Ir a la página</button>
+
+<!-- Pantalla de carga -->
+<div class="loading-screen" id="loadingScreen">
+    <div class="loading"></div>
+    <p>Cargando, por favor espere...</p>
+</div>
+
+<script>
+    const redirectBtn = document.getElementById("redirectBtn");
+    const loadingScreen = document.getElementById("loadingScreen");
+
+    redirectBtn.addEventListener("click", () => {
+    // Ocultar el botón inicial
+    redirectBtn.style.display = "none";
+
+    // Mostrar la pantalla de carga
+    loadingScreen.style.display = "flex";
+
+    // Redirigir tras unos segundos
+    setTimeout(() => {
+        window.location.href = "https://www.pagina-final.com";
+    }, 3000); // Espera de 3 segundos
+    });
+</script>
+</body>
+</html>

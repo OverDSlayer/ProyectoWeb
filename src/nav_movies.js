@@ -90,3 +90,19 @@ function cargarContenido() {
 // Cargar el contenido al cargar la página
 window.onload = cargarContenido;
 
+//PANTALLA DE CARGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+const redirectBtn = document.getElementById("redirectBtn");
+    const loadingScreen = document.getElementById("loadingScreen");
+
+    redirectBtn.addEventListener("click", () => {
+    // Ocultar el botón inicial
+    redirectBtn.style.display = "none";
+
+    // Mostrar la pantalla de carga
+    loadingScreen.style.display = "flex";
+
+    // Redirigir tras unos segundos
+    setTimeout(() => {
+        window.location.href = "https://www.youtube.com/watch?v=IczKQI8jmt0&pp=ygUReW8gc295IHR1cmJvIHkgbWU%3D";
+    }, 3000); // Espera de 3 segundos
+    });
